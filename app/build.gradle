@@ -34,7 +34,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+	signingConfigs {
+        release {
+            storeFile rootProject.file("../sign.keystore")
+            storePassword properties['3698']
+            keyAlias properties['lob']
+            keyPassword properties['3698']
+        }
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

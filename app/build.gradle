@@ -31,18 +31,10 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    signingConfigs {
-        release {
-            storeFile rootProject.file("../sign.keystore")
-            storePassword 369852
-            keyAlias lob
-            keyPassword 369852
-        }
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

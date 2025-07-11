@@ -34,7 +34,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-	signingConfigs {
+    signingConfigs {
         release {
             storeFile rootProject.file("../sign.keystore")
             storePassword properties['3698']

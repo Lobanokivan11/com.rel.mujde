@@ -1,6 +1,9 @@
 name: Build Mujde apk for Xפosed-framework
 
 on:
+	workflow_dispatch:
+  schedule:
+  - cron: "0 * * * *"
   push:
     branches:
       - main

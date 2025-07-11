@@ -37,9 +37,9 @@ android {
     signingConfigs {
         release {
             storeFile rootProject.file("../sign.keystore")
-            storePassword properties['3698']
-            keyAlias properties['lob']
-            keyPassword properties['3698']
+            storePassword 369852
+            keyAlias lob
+            keyPassword 369852
         }
     }
     compileOptions {

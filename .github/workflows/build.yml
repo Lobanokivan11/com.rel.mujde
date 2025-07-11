@@ -43,3 +43,13 @@ jobs:
         with:
           name: mujde-aab
           path: app/build/outputs/bundle/release/app-release.aab
+
+      - name: Release Nightly
+        uses: softprops/action-gh-release@v1
+        with:
+          body: Nightly Builds
+          tag_name: github_run
+          name: Action Release
+          files: |
+             app/build/outputs/apk/release/app-release.apk
+             app/build/outputs/bundle/release/app-release.aab
